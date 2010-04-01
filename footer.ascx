@@ -1,0 +1,2 @@
+<%@ Control Language="c#" Inherits="netba.footer" CodeFile="footer.ascx.cs" %>
+<center><hr width=90%><i><font size=-3>Questions, comments, or problems? Click <a href=mailto:ohri@sep.com>here</a> to tell it to someone who cares</font></i></center>

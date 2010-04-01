@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netba", "http://localhost/netba/netba.csproj", "{3D454575-11B9-471F-B657-8CCE288EBA13}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatGrabber", "..\..\..\Documents and Settings\ohri\My Documents\Visual Studio Projects\StatGrabber\StatGrabber\StatGrabber.csproj", "{AD0E872B-AB36-49DA-8702-C83B5B033B72}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatGrabberTest", "..\..\..\Documents and Settings\ohri\My Documents\Visual Studio Projects\StatGrabberTest\StatGrabberTest\StatGrabberTest.csproj", "{1D121B8E-8CF6-46F8-BB58-DA93F9B3F63F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "..\..\..\Documents and Settings\ohri\My Documents\Visual Studio Projects\Logger\Logger.csproj", "{A7910C4F-B894-4C57-B9D2-768D0D7B506B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3D454575-11B9-471F-B657-8CCE288EBA13}.Debug.ActiveCfg = Debug|.NET
+		{3D454575-11B9-471F-B657-8CCE288EBA13}.Debug.Build.0 = Debug|.NET
+		{3D454575-11B9-471F-B657-8CCE288EBA13}.Release.ActiveCfg = Release|.NET
+		{3D454575-11B9-471F-B657-8CCE288EBA13}.Release.Build.0 = Release|.NET
+		{AD0E872B-AB36-49DA-8702-C83B5B033B72}.Debug.ActiveCfg = Debug|.NET
+		{AD0E872B-AB36-49DA-8702-C83B5B033B72}.Debug.Build.0 = Debug|.NET
+		{AD0E872B-AB36-49DA-8702-C83B5B033B72}.Release.ActiveCfg = Release|.NET
+		{AD0E872B-AB36-49DA-8702-C83B5B033B72}.Release.Build.0 = Release|.NET
+		{1D121B8E-8CF6-46F8-BB58-DA93F9B3F63F}.Debug.ActiveCfg = Debug|.NET
+		{1D121B8E-8CF6-46F8-BB58-DA93F9B3F63F}.Debug.Build.0 = Debug|.NET
+		{1D121B8E-8CF6-46F8-BB58-DA93F9B3F63F}.Release.ActiveCfg = Release|.NET
+		{1D121B8E-8CF6-46F8-BB58-DA93F9B3F63F}.Release.Build.0 = Release|.NET
+		{A7910C4F-B894-4C57-B9D2-768D0D7B506B}.Debug.ActiveCfg = Debug|.NET
+		{A7910C4F-B894-4C57-B9D2-768D0D7B506B}.Debug.Build.0 = Debug|.NET
+		{A7910C4F-B894-4C57-B9D2-768D0D7B506B}.Release.ActiveCfg = Release|.NET
+		{A7910C4F-B894-4C57-B9D2-768D0D7B506B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

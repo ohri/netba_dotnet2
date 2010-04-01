@@ -1,0 +1,68 @@
+﻿		    var ValidSpots = new Array();
+		    ValidSpots[2246] = [ document.input[hiddenSPG], document.input[hiddenBPG], document.input[hiddenSSG], document.input[hiddenBSG], document.input[hiddenG1], document.input[hiddenG2] ];
+		    ValidSpots[1801] = [ document.input[hiddenSPG], document.input[hiddenBPG], document.input[hiddenSSG], document.input[hiddenBSG], document.input[hiddenG1], document.input[hiddenG2] ];
+		    ValidSpots[2149] = [ document.input[hiddenSPG], document.input[hiddenBPG], document.input[hiddenSSG], document.input[hiddenBSG], document.input[hiddenG1], document.input[hiddenG2] ];
+		    ValidSpots[1516] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSSG], document.input[hiddenBSG], document.input[hiddenG1], document.input[hiddenG2] ];
+		    ValidSpots[2092] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2] ];
+		    ValidSpots[1708] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[2100] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[1438] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[1977] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[2246] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[2246] = [ document.input[hiddenSSF], document.input[hiddenBSF], document.input[hiddenSPF], document.input[hiddenBPF], document.input[hiddenG1], document.input[hiddenG2]];
+		    ValidSpots[1521] = [ document.input[hiddenSC], document.input[hiddenBC], document.input[hiddenG1], document.input[hiddenG2] ];
+
+		    function assignPlayer( thiscontrol, hiddenforthis )
+		    {
+			    if( document.Form1.lbRoster.selectedIndex != -1 )
+			    {
+				    thiscontrol.innerHTML = document.Form1.lbRoster.options[document.Form1.lbRoster.selectedIndex].text;
+				    hiddenforthis.value = document.Form1.lbRoster.options[document.Form1.lbRoster.selectedIndex].value;
+
+				    // check for duplicate assignments
+				    if( isDuplicate( hiddenforthis, hiddenforthis.value )
+				    {
+				        // need to turn on warning for this target control AND the dupe!?
+				    }
+
+				    // check for invalid position
+				    if (!isAssignmentValid(hiddenforthis, hiddenforthis.value))
+				    {
+				        // need to turn on warning for this target control
+				    }
+			    }
+			}
+
+			function isDuplicate(targethidden, playerid)
+			{
+			    if (document.input[hiddenSPG] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenSSG] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenSSF] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenSPF] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenSC] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenBPG] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenBSG] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenBSF] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenBPF] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenBC] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenG1] != targethidden && targethidden.value == playerid) return true;
+			    if (document.input[hiddenG2] != targethidden && targethidden.value == playerid) return true;
+			    return false;
+			}
+
+			function isAssignmentValid(targethidden, playerid)
+			{
+			    var i = 0;
+			    while( i < ValidSpots.length )
+			    {
+			        if( targethidden != ValidSpots[playerid][i] )
+			        {
+    			        i++;
+    			    }
+    			    else
+    			    {
+    			        return true;
+    			    }
+    			}
+    			return false;
+			}

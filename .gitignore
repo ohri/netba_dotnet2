@@ -1,0 +1,10 @@
+*.pdb
+*.dll
+*.refresh
+*.Png
+!completed_trades.png
+!active_trades2.png
+*.vcproj.*.user
+*.ncb
+*.aps
+*.suo
